@@ -1,4 +1,14 @@
 package ua.dragunov.api.data.user;
 
-public record SaveUserRequest(long id) {
+import ua.dragunov.api.model.HotelServiceUser;
+
+public record SaveUserRequest(
+        long id,
+        String firstName,
+        String lastName,
+        String email,
+        String password,
+        String phone
+) {
+
 }
